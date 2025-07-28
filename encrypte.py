@@ -1,3 +1,6 @@
+secret = input("Enter your key: ")
+text = input("Enter your txt")
+
 def encrypte_text(secret, text):
     result = []
     for i in range(len(text)):
@@ -7,4 +10,4 @@ def encrypte_text(secret, text):
         result += [char_to_add]
     return result
 
-print(encrypte_text("123456", "hello"))
+print(encrypte_text(secret, text))
